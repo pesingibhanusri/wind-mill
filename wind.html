@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wind mill</title>
+  <style>
+    .class1{
+        height: 400px;
+        width: 500px;
+        background-color: darkslateblue;
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        transform: translate(-50px , -50px);
+        
+    }
+    .round{
+        height: 100px;
+        width: 100px;
+        background-color: brown;
+        border-radius: 50%;
+        position: absolute;
+        top: 100px;
+        left: 170px;
+        z-index: 2;
+        
+    }
+    .blade1{
+        height: 25px;
+        width: 205px;
+        background-color: chartreuse;
+        position: absolute;
+        left: 120px;
+        top: 150px;
+        z-index: 3;
+    }
+    .blade2{
+        height: 205px;
+        width: 25px;
+        background-color: chartreuse;
+        position: absolute;
+        left: 210px;
+        top: 70px;
+        z-index: 4;
+        
+    }
+    
+    
+    .stand{
+        height: 250px;
+        width: 40px;
+        background-color: crimson;
+        position: absolute;
+        left: 200px;
+        top: 150px;
+    }
+    @keyframes windmill{
+        0%{
+           transform: rotate(0deg); 
+        }
+        100%{
+transform: rotate(360deg);
+        }
+
+    
+    }
+    .wind{
+        animation: windmill 3s linear infinite;
+    }
+</style>
+</head>
+<body>
+    <div class="class1">
+        <div class="round wind"></div><br>
+        <div class="blade1 wind "></div><br>
+        <div class="blade2 wind"></div><br>
+        
+        <div class=" stand "></div>
+    </div>
+
+</body>
+</html>
